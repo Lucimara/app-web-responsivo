@@ -1,0 +1,48 @@
+p {
+    color: indigo;
+    text-align: justify;
+}
+body{
+    background-color: #efcdca  /*#f4ead6*/ ;
+    color: #906553 /*#B16E4B*/;
+    font-family: cursive;
+    font-style: italic;
+    box-sizing: border-box;
+    
+}
+table{
+    border: solid #CA9E93 /*#FDCF76*/;
+    margin-top: 25px;
+    border-radius: 5px 60px;
+    padding: 5px;
+}
+.botao{
+    color: #906553;
+    background-color: #CA9E93;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+ul, li{
+    display: inline;
+    align-content: center;
+}
+a:visited{
+    color: maroon;
+}
+.ajustavel {
+    width: 90%;
+    max-width: 700px;
+    margin: 25px auto;
+    border: solid #CA9E93;
+    border-radius: 5px 50px;
+    padding: 10px;
+}
+.campos {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 3px;
+}
