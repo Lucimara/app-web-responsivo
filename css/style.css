@@ -1,3 +1,4 @@
+/* VARIÁVEIS GLOBAIS E TEMA PADRÃO  */
 :root {
     --cor-fonte: #5c3d43;
     --cabecalho: #a56c76;
@@ -7,6 +8,7 @@
     --cor-background-conteudo: #fff7f8;
 }
 
+/* TEMAS ALTERNATIVOS */
 .tema-praia {
     --cor-fonte: #7a4e2d;
     /* marrom areia */
@@ -218,7 +220,7 @@ pre {
     display: block;
 }
 
-/* right-side */
+/* right-side - barra lateral */
 #right-side {
     float: right;
     background: var(--cor-background-conteudo);
@@ -278,6 +280,7 @@ a:hover {
     transition: .2s ease;
 }
 
+/* Formatação de menu */
 .menu {
     list-style: none;
     display: flex;
@@ -606,9 +609,6 @@ a:hover {
     border-right: 1px solid #b7e0c0;
     border-bottom: 1px solid #b7e0c0;
 }
-.input-erro {
-    border: 2px solid var(--cor-link) !important;
-}
 
 /* Para lembrar que campo é obrigatório */
 .campo-obrigatorio {
@@ -622,6 +622,7 @@ a:hover {
     display: inline;
 }
 
+/* Campo inválido durante a validação */
 .input-erro {
     border: 2px solid #d66b6b !important;
     background-color: #fff3f3 !important;

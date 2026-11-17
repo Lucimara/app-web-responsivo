@@ -11,7 +11,7 @@ fetch("componentes/header.html")
         inicializarMenu();
     });
 
-
+/* Carrega os temas da aplicação */
 function carregarTemas() {
 
     const container =
@@ -29,7 +29,7 @@ function carregarTemas() {
         });
 
 }
-
+/* Inicializa a troca de temas e salva a preferência */
 function inicializarTemas() {
 
     const botoesTema =
@@ -77,6 +77,7 @@ function inicializarTemas() {
 
 }
 
+/* Inicializa o menu responsivo */
 function inicializarMenu() {
 
     const btnMenu =
@@ -120,6 +121,7 @@ function carregarSidebar() {
         });
 }
 
+/* Carrega o botão de voltar ao topo */
 function carregarBotaoTopo() {
 
     const container =
@@ -141,6 +143,7 @@ function carregarBotaoTopo() {
 
 }
 
+/* Controla a exibição e o comportamento do botão topo */
 function inicializarBotaoTopo() {
 
     const btnTopo =
@@ -175,6 +178,13 @@ function inicializarBotaoTopo() {
 
 }
 
+/*
+   FORMULÁRIO DE CONTATO
+   - Validação dos campos obrigatórios
+   - Validação do formato do e-mail
+   - Simulação do envio
+   - Exibição de mensagens de erro e sucesso
+ */
 function inicializarFormularioContato() {
 
     const formulario =
@@ -203,6 +213,7 @@ function inicializarFormularioContato() {
         const mensagem =
             document.getElementById("mensagem");
 
+        // Limpa mensagens anteriores
         status.textContent = "";
         status.className = "";
 
@@ -221,6 +232,9 @@ function inicializarFormularioContato() {
 
         let formularioValido = true;
 
+        /* 
+           VALIDAÇÃO DOS CAMPOS OBRIGATÓRIOS
+         */
         if (nome.value.trim() === "") {
 
             document
@@ -291,13 +305,15 @@ function inicializarFormularioContato() {
 
             return;
         }
-
+        /* 
+                   SIMULAÇÃO DO ENVIO
+                */
         status.textContent =
             "Mensagem enviada com sucesso!";
 
         status.className =
             "sucesso";
-
+        // Limpa os campos do formulário
         formulario.reset();
 
         document
